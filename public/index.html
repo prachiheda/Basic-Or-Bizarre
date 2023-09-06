@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Basic or Bizarre
+  </title>
+  <style type="text/css">
+      #login,
+      #loggedin {
+          display: none;
+      }
+
+      .navbar {
+      background: linear-gradient(to right, #f2097b, #3409f2);
+      overflow: hidden;
+      display: flex; 
+      justify-content: flex-end;
+      color: white;
+      margin: 0px;  
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 46, 170, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -10px 10px, rgba(0, 0, 0, 0.05) -0 0;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      color: white;
+      
+    }
+
+    .navbar a:hover {
+      background-color: hotpink
+    }
+
+    .content-container {
+      background: #4143be;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.4) -5px 5px, rgba(0, 0, 0, 0.3) -10px 10px, rgba(0, 46, 170, 0.2) -15px 15px, rgba(0, 0, 0, 0.1) -10px 10px, rgba(0, 0, 0, 0.05) -0 0;
+      margin-top: 20px; /* Add some space between navbar and content */
+      display: flex;
+      flex-direction: column; 
+      flex: 1; 
+      color: white;
+      align-items: center;
+      justify-content: center;
+    }
+
+    body {
+      margin: 30px;
+      padding: 0;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      height: 100vh; /* Ensure the body fills the entire viewport height */
+    }
+
+    .input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+}
+
+#result {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+}
+
+#login {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+}
+
+
+.action-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+}
+
+
+    .input-container input,
+.input-container button,
+#login-button,
+#submit-button,
+#refresh-button,
+#logout-button {
+  padding: 10px 20px; /* Add padding for buttons */
+  margin: 10px; 
+  border: none; /* Remove default button border */
+  background-color: hotpink; /* Set button background color */
+  color: white; /* Set text color */
+  border-radius: 20px; /* Apply border-radius for buttons */
+  cursor: pointer; /* Add pointer cursor for buttons */
+  margin-top: 10px; /* Add margin between elements */
+}
+
+/* Add hover effect for buttons */
+.input-container button:hover,
+#login-button:hover,
+#submit-button:hover,
+#refresh-button:hover,
+#logout-button:hover {
+  background-color: lightpink;
+}
+
+#input-field{
+  width: 200px; 
+}
+
+a {
+  color: white
+}
+
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="community.html">Community</a>
+    <a href="faq.html">FAQ</a>
+    <a href="privacy.html">Privacy</a>
+  </div>
+
+<div class = "content-container">
+  <div id="login">
+    <h1>Basic or Bizarre </h1>
+    <h3>How unique is your playlist?</h3>
+    <button id="login-button">Get started</button>
+  </div>
+  <div id="loggedin">
+    <div id="main"></div>
+    <div id="oauth"></div>
+    <div class="input-container">
+      <input id="input-field" placeholder="Enter your playlist link">
+      <button id="submit-button" >Calculate</button>
+      
+    </div>
+      <p id="result"></p>
+    <div class = "action-buttons">
+      <!-- <button id="refresh-button">
+        Refresh
+      </button> -->
+      <button id="logout-button">
+        Logout
+      </button>
+    </div>
+    
+  </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
