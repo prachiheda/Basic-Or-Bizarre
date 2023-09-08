@@ -1,1 +1,1 @@
-web: node ./public/index.html
+web: npm start
