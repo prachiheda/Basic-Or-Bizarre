@@ -1,11 +1,3 @@
-const express = require('express')
-const cookieParser = require('cookie-parser')
-
-//setup express app
-const app = express()
-
-// let’s you use the cookieParser in your application
-app.use(cookieParser());
 
 (function () {
   function generateRandomString(length) {
