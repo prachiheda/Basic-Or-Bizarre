@@ -7,6 +7,8 @@
   },
   "author": "Tobias Kausch",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.2",
     "http-server": "^0.12.3"
   }
 }
